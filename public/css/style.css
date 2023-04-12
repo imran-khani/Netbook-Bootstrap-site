@@ -1,0 +1,399 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+*,
+::after ::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 1px solid #f00 !important;
+}
+:active,
+:hover,
+:focus {
+  outline: 0 !important;
+  outline-offset: 0 !important;
+}
+a,
+a:hover {
+  text-decoration: none;
+}
+a:hover {
+  color: var(--primary-color);
+}
+a {
+  color: var(--primary-color);
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+li:hover {
+  color: inherit !important;
+}
+
+/* Variables definition  */
+:root {
+  --primary-color: #217bf4;
+  --secondary-color: #0a093d;
+  --tertiary-color: #2f2c4a;
+  --white-color: #fff;
+  --black-color: #1e1d23;
+  --text-color: #656464;
+  --primary-font: "inter", sans-serif;
+  --secondary-font: "Robotto", sans-serif;
+  --card-shadow: 14px 22px 52px -12px rgba(127, 127, 127, 0.13);
+}
+/* ------ utilities classes ----  */
+.main-btn {
+  padding: 0.875rem 1.25rem;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  box-shadow: var(--primary-color) 0.0625rem 0.0625rem 0.1875rem;
+  border-radius: 1rem;
+  font-family: var(--primary-font);
+  text-align: center;
+  line-height: 25px;
+}
+
+.secondary-btn {
+  padding: 0.9375rem 1.875rem;
+  border-color: var(--primary-color);
+  border: 0.0625rem solid;
+  color: var(--primary-color);
+  margin-left: 1rem;
+  border-radius: 1rem;
+  font-family: var(--primary-font);
+}
+.secondary-btn:hover {
+  border: 0.0625rem solid;
+  background: var(--primary-color);
+  color: var(--white-color) !important;
+}
+.main-btn:hover {
+  background-color: var(--white-color);
+  color: var(--primary-color);
+  border: 0.0625rem solid var(--primary-color);
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 4.125rem;
+  font-family: var(--primary-font);
+  color: var(--secondary-color);
+}
+h2 {
+  color: var(--secondary-color);
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 3rem;
+  font-family: var(--primary-font);
+}
+h3 {
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.625rem;
+}
+p {
+  color: var(--text-color);
+  font-size: 1.125rem;
+  font-family: var(--primary-font);
+  margin-top: 0.3125rem;
+}
+/* smooth scroll  */
+html {
+  scroll-behavior: smooth;
+}
+/* set default values to body IE browser*/
+body {
+  font-family: var(--primary-font);
+  font-size: 100%;
+  font-weight: 400;
+}
+.wrapper {
+  padding: 4rem 2rem;
+}
+
+/* --------- header section -------  */
+
+header {
+  background: linear-gradient(311.76deg, #d4e7fe -15.24%, #ffffff 78.85%);
+}
+.navbar {
+  padding: 1.25rem 0;
+
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0.0625rem 0.1875rem 0px,
+    rgba(0, 0, 0, 0.06) 0px 0.0625rem 0.125rem 0rem;
+}
+
+.navbar-nav {
+  padding: 0 3.75rem;
+}
+.nav-link {
+  font-size: 0.875rem;
+  color: var(--text-color);
+  font-family: var(--primary-font);
+  font-weight: 400;
+  line-height: 0.875rem;
+  margin-left: 1.4rem;
+}
+
+.navbar .form-control {
+  border: none;
+  outline: none;
+  border-bottom: 0.0625rem solid rgb(214, 206, 206) !important;
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 0.875rem;
+  position: relative;
+  background: transparent;
+}
+.navbar form {
+  position: relative;
+}
+.navbar input[type="search"]:focus {
+  outline: 0;
+  box-shadow: none;
+  border: none;
+}
+.navbar form::after {
+  content: "\f002";
+  font-family: "FontAwesome";
+  left: -0.3125rem;
+  position: absolute;
+  top: 0.375rem;
+  vertical-align: middle;
+  font-weight: 100;
+  color: grey;
+  font-size: 0.875rem;
+  padding-right: 0.5rem;
+}
+
+/* ------------- home section --------------  */
+
+.home .left {
+  padding: 6.25rem 0;
+}
+
+.home .btn-netbook {
+  background: #e7f1fe;
+  border-radius: 0.5rem;
+  color: var(--primary-color);
+}
+
+/* ------------ about section ---------- */
+
+.about-section p {
+  font-size: 1rem;
+  line-height: 28px;
+}
+.about-section ul li {
+  list-style-type: none;
+  margin-left: 1.8rem;
+  margin-top: 1.3rem;
+  list-style-image: url("img/bullet.svg");
+  font-size: 1.125rem;
+  line-height: 1.125rem;
+  font-weight: 500;
+}
+.about-section .card {
+  box-shadow: 0px 1.625rem 3.0625rem rgba(146, 165, 184, 0.14);
+  padding: 2rem 2rem;
+  border-radius: 0.625rem;
+}
+.about-section .card .text-content {
+  display: flex;
+  align-items: center;
+}
+.about-section .card img {
+  max-width: 100%;
+  height: auto;
+  margin-right: 8px;
+  float: left;
+}
+.about-section .card p {
+  font-weight: 700;
+  color: var(--secondary-color);
+  font-size: 1rem;
+}
+.about-section .card span {
+  color: var(--primary-color);
+}
+.about-section .card .para {
+  color: var(--text-color);
+  font-weight: normal;
+  font-size: 1rem;
+  font-family: var(--primary-font);
+}
+.about-section .card i {
+  font-size: 0.75rem;
+}
+.about-section .card h2 {
+  font-size: 26px;
+  line-height: 2.5rem;
+}
+.about-section .discover-btn {
+  padding: 0.8125rem 1.5625rem;
+  background: var(--primary-color);
+  border-radius: 1rem;
+  width: 9.375rem;
+  color: var(--white-color);
+  transition: 0.5s all;
+  border: 1px solid var(--primary-color);
+  line-height: 2rem;
+  font-size: 0.875rem;
+}
+.about-section .discover-btn:hover {
+  background: transparent;
+  color: var(--primary-color);
+}
+
+/* ------------ feature section --------  */
+
+.feature-section {
+  background: linear-gradient(
+    0deg,
+    rgba(241, 246, 253, 0) 1.63%,
+    #f1f6fd 20.5%,
+    #f1f6fd 58.57%,
+    #ffffff 100%
+  );
+}
+
+.feature-section .row .card {
+  border: 0;
+  box-shadow: var(--card-shadow);
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.feature-section .card img {
+  max-width: 110px;
+  height: auto;
+  padding-top: 1rem;
+}
+.feature-section p {
+  font-size: 0.9375rem;
+  color: var(--text-color);
+}
+.feature-section .card-section {
+  padding: 0 2rem;
+}
+.feature-section .card-text { 
+  padding:3rem;
+  
+}
+
+/* --------- team section -------  */
+
+.team-section p {
+  font-size: 14px;
+}
+.team-section .btn-group {
+  background: #217cf40f;
+  padding: 0.3125rem rem;
+  border-radius: 0.625rem;
+  border: none;
+}
+.btn-group label {
+  margin: 0 0.5rem;
+  padding: 0.6rem 1.4rem;
+  color: var(--tertiary-color);
+  cursor: pointer;
+}
+.btn-group .active {
+  background: var(--primary-color);
+  color: var(--white-color);
+  border-radius: 10px;
+}
+.team-section .card {
+  height: 17rem;
+  box-shadow: var(--card-shadow);
+  padding: 2rem 0 0;
+}
+
+/* -------------- mockup section ----------  */
+
+.mockup-section {
+  background-color: #e5f0fd;
+}
+.mockup-section h2 {
+  padding: 0.5rem 0;
+  font-size: 2.5rem;
+  line-height: normal;
+}
+
+/* ------------- blog section -----------  */
+
+.blog-section .card-text {
+  position: relative;
+}
+.blog-section .card-text::before {
+  content: "";
+  width: 26px;
+  height: 3px;
+  background: gold;
+  display: inline-block;
+  top: 20px;
+  left: -50px;
+  position: absolute;
+}
+
+/* ---------- Footer section ----------  */
+
+footer {
+  background: #2b2b39;
+  padding: 3rem 0 1rem 0rem;
+  text-align: center;
+}
+.footer-section p {
+  color: var(--text-color);
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.5rem 0;
+}
+.footer-section ul li {
+  list-style: none;
+  color: #e7e7e7;
+  margin: 1rem 0;
+  font-size: 14px;
+  cursor: pointer;
+}
+ul li:hover {
+  color: var(--primary-color) !important;
+}
+
+.footer-section h3 {
+  color: var(--white-color);
+}
+
+.footer-section input {
+  color: var(--white-color);
+  font-size: 1rem;
+  background: transparent;
+  padding: 0.9375rem 1.25rem;
+  outline: 0;
+  border-radius: 0.625rem;
+  border: 1px solid var(--white-color);
+  box-shadow: none !important;
+}
+.footer-section input::placeholder {
+  font-size: 1rem !important;
+  color: var(--text-color);
+}
+.footer-section input:focus {
+  background-color: var(--bla-color);
+  color: var(--white-color);
+}
+
+.footer-section button {
+  position: absolute;
+  right: 2rem;
+  border-radius: 10px !important;
+  padding: 12px 20px;
+  border: 0;
+  background-color: var(--white-color);
+}

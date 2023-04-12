@@ -1,0 +1,105 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+    line-height: 3.5rem;
+    text-align: center;
+  }
+  .home {
+    margin: auto;
+  }
+  .home .left {
+    padding: 1.25rem 1rem;
+  }
+  .home .btn-netbook {
+    background: #e7f1fe;
+    border-radius: 0.5rem;
+    color: var(--primary-color);
+    font-size: 0.625rem;
+  }
+
+  .secondary-btn {
+    padding: 15px 20px;
+    margin-left: 10px;
+  }
+  .wrapper {
+    padding: 4rem 0rem;
+  }
+  /* ----- feature section ------  */
+  .feature-section .card img {
+    display: block;
+    margin: 0 auto;
+  }
+  .feature-section .card-text {
+    text-align: center;
+    padding: 0.5rem 2rem;
+  }
+  /* ---- teams section ----  */
+  .team-section .card {
+    min-height: 10rem;
+  }
+  .feature-section .card-text {
+    padding: 2rem;
+  }
+  .btn-group label {
+    margin: 0;
+    padding: 0.6rem 1.4rem;
+    color: var(--tertiary-color);
+    cursor: pointer;
+  }
+  .footer-section input {
+    padding: 0.625rem 0.9375rem;
+    max-width: 60%;
+    margin-left: 1.2rem;
+  }
+  /* --- footer --  */
+  .footer-section button {
+    padding: 12px 15px;
+    right: 20px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  h1 {
+    font-size: 2rem;
+    line-height: 3.5rem;
+  }
+  .home .left {
+    padding: 0.5rem 1rem;
+  }
+  /* ---- feature section ---  */
+  .feature-section .card {
+    height: 90%;
+  }
+  .feature-section .card img {
+    max-width: 80px;
+    height: auto;
+    padding-top: 1rem;
+  }
+  .feature-section .card-text {
+    padding: 2rem 2rem;
+  }
+  .feature-section h3 {
+    font-size: 1.2rem;
+  }
+  .feature-section p {
+    font-size: 0.8125rem;
+  }
+
+  /* ------ Footer -------  */
+  .footer-section input-group {
+    display: block;
+  }
+  .footer-section input {
+    padding: 10px 15px;
+    width: 75% !important;
+  }
+  .footer-section input::placeholder {
+    font-size: 10px;
+  }
+  /* --- footer --  */
+  .footer-section button {
+    padding: 12px 10px;
+  }
+}
